@@ -2,7 +2,7 @@
   "name": "eslint-config-exivity",
   "version": "1.0.0",
   "description": "The eslint configurations for Exivity",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,8 +19,7 @@
   "bugs": {
     "url": "https://github.com/exivity/eslint-plugin/issues"
   },
-  "homepage": "https://github.com/exivity/eslint-plugin#readme",
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": ">= 2.3.0",
     "@typescript-eslint/parser": ">= 1.11.0",
     "eslint": ">= 5.6.0",
@@ -30,5 +29,6 @@
     "eslint-plugin-jsx-a11y": ">= 6.0.3",
     "eslint-plugin-react": ">= 7.14.3",
     "eslint-plugin-react-hooks": ">= 2.0.1"
-  }
+  },
+  "homepage": "https://github.com/exivity/eslint-plugin#readme"
 }
