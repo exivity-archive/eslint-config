@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-exivity",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The eslint configurations for Exivity",
   "main": "index.js",
   "scripts": {
