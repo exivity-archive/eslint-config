@@ -1,1 +1,1 @@
-# eslint-plugin
+# eslint-config
