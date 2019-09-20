@@ -69,7 +69,6 @@ module.exports = {
   ],
   
   rules: {
-    ...JSX_A11Y_RULES,
     ...JEST_RULES,
     ...JEST_FORMATTING_RULES
   },
