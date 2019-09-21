@@ -58,5 +58,4 @@ For this config to work properly it requires these peer dependencies:
     "eslint": ">= 5.6.0",
     "eslint-plugin-jest": ">= 22.17.0",
     "eslint-plugin-jest-formatting": ">= 1.1.0"
-    
 ```
