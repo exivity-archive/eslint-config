@@ -12,7 +12,7 @@ This package has 3 available configurations.
 
 `default`:
 
-This is the default configuration that applies to every Exivity JS project. It defines the standard eslint rules as defining typescript rules and import rules.
+This is the default configuration that applies to every Exivity JS project. It defines the standard eslint rules as well as defining typescript rules and import rules.
 
 ```js
 { extensions: ['exivity'] }
@@ -46,7 +46,7 @@ For this config to work properly it requires these peer dependencies:
 
 `react`:
 
-This configuration defines all the react specific rules as well as rules that have to do with jsx.
+This configuration defines all the React specific rules as well as rules that have to do with jsx.
 
  ```js
 { extensions: ['exivity/react'] }
