@@ -362,7 +362,6 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/unified-signatures': OFF,
 
   '@typescript-eslint/no-explicit-any': WARN,
-  '@typescript-eslint/no-non-null-assertion': WARN,
   '@typescript-eslint/no-unused-vars': [WARN, { 'vars': 'all', 'args': 'after-used' }],
   '@typescript-eslint/no-use-before-define': WARN,
 
@@ -379,6 +378,7 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/no-inferrable-types': ERROR,
   '@typescript-eslint/no-misused-new': ERROR,
   '@typescript-eslint/no-namespace': ERROR,
+  '@typescript-eslint/no-non-null-assertion': ERROR,
   '@typescript-eslint/no-this-alias': ERROR,
   '@typescript-eslint/no-var-requires': ERROR,
   '@typescript-eslint/prefer-namespace-keyword': ERROR,
