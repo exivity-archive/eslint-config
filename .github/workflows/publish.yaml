@@ -1,0 +1,19 @@
+name: publish
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: publish
+        run: |
+          sudo apt-get install yarn
+          yarn version:bump
+          npm publish
+        env: 
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
