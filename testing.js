@@ -58,6 +58,13 @@ const JEST_FORMATTING_RULES = {
   'jest-formatting/padding-around-test-blocks': ERROR
 }
 
+const TEST_OVERRIDES = {
+  files: ['*.test.*'],
+  rules: {
+    'no-restricted-imports': [WARN, { 'paths': ['enzyme'] }]
+  }
+}
+
 module.exports = {
   env: {
     'jest/globals': true
@@ -72,6 +79,10 @@ module.exports = {
     ...JEST_RULES,
     ...JEST_FORMATTING_RULES
   },
+
+  overrides: [
+    TEST_OVERRIDES
+  ],
   
   'settings': {
     'react': {
