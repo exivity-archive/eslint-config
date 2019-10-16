@@ -10,13 +10,13 @@ yarn add eslint-config-exivity --dev
 
 This package exports 3 configurations:
 
-### `exivity`
+### `exivity/core`
 
 This is the default configuration that applies to every Exivity JS project. It defines the standard eslint rules as well as defining typescript rules and import rules.
 
 ```js
 {
-  extends: ["exivity"]
+  extends: ["exivity/core"]
 }
 ```
 
