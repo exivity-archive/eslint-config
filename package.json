@@ -4,11 +4,12 @@
   "description": "The eslint configurations for Exivity",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exivity/eslint-plugin.git"
+    "url": "https://github.com/exivity/eslint-plugin.git"
   },
   "keywords": [
     "eslint",
@@ -18,6 +19,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/exivity/eslint-plugin/issues"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.13.30"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">= 2.3.0",
