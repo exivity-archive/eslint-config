@@ -361,10 +361,6 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
 
-  '@typescript-eslint/no-explicit-any': WARN,
-  '@typescript-eslint/no-unused-vars': [WARN, { 'vars': 'all', 'args': 'after-used' }],
-  '@typescript-eslint/no-use-before-define': WARN,
-
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
   '@typescript-eslint/ban-ts-ignore': ERROR,
   '@typescript-eslint/ban-types': ERROR,
@@ -374,17 +370,19 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
   '@typescript-eslint/no-empty-function': ERROR,
-  '@typescript-eslint/no-empty-interface': ERROR,
+  '@typescript-eslint/no-empty-interface': ERROR,    
+  '@typescript-eslint/no-explicit-any': ERROR,      
   '@typescript-eslint/no-inferrable-types': ERROR,
   '@typescript-eslint/no-misused-new': ERROR,
   '@typescript-eslint/no-namespace': ERROR,
   '@typescript-eslint/no-non-null-assertion': ERROR,
   '@typescript-eslint/no-this-alias': ERROR,
+  '@typescript-eslint/no-unused-vars': ERROR,
+  '@typescript-eslint/no-use-before-define': ERROR,
   '@typescript-eslint/no-var-requires': ERROR,
   '@typescript-eslint/prefer-namespace-keyword': ERROR,
   '@typescript-eslint/triple-slash-reference': ERROR,
   '@typescript-eslint/type-annotation-spacing': ERROR
-  
 }
 
 const IMPORT_RULES = {
