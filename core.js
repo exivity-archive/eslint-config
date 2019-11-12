@@ -240,7 +240,7 @@ const ESLINT_RULES = {
   'keyword-spacing': [ERROR, { 'before': true, 'after': true }],
   'lines-between-class-members': [ERROR, 'always', { 'exceptAfterSingleLine': true }],
   'max-len': [ERROR, { 'code': 100 }],
-  'multiline-ternary': [ERROR, 'always'],
+  'multiline-ternary': [ERROR, 'always-multiline'],
   'new-cap': [ERROR, { 'newIsCap': true, 'capIsNew': false, 'properties': true }],
   'new-parens': ERROR,
   'no-array-constructor': ERROR,
