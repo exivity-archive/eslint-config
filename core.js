@@ -360,6 +360,8 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/typedef': OFF,
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
+      
+  '@typescript-eslint/no-explicit-any': WARN,
 
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
   '@typescript-eslint/ban-ts-ignore': ERROR,
@@ -371,7 +373,6 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/no-array-constructor': ERROR,
   '@typescript-eslint/no-empty-function': ERROR,
   '@typescript-eslint/no-empty-interface': ERROR,    
-  '@typescript-eslint/no-explicit-any': ERROR,      
   '@typescript-eslint/no-inferrable-types': ERROR,
   '@typescript-eslint/no-misused-new': ERROR,
   '@typescript-eslint/no-namespace': ERROR,
