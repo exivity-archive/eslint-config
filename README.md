@@ -1,5 +1,7 @@
 # eslint-config-exivity
 
+![npm](https://img.shields.io/npm/v/eslint-config-exivity)
+
 ## installing
 
 ```
