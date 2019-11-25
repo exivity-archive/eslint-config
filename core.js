@@ -233,7 +233,7 @@ const ESLINT_RULES = {
     'ImportDeclaration': 1,
     'flatTernaryExpressions': false,
     'ignoreComments': false,
-    'ignoredNodes': ['TemplateLiteral *']
+    'ignoredNodes': ['TemplateLiteral > *']
   }],
   'jsx-quotes': [ERROR, 'prefer-single'],
   'key-spacing': [ERROR, { 'beforeColon': false, 'afterColon': true }],
