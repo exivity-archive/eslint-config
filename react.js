@@ -73,11 +73,11 @@ const REACT_RULES = {
   'react/jsx-pascal-case': OFF,
   'react/jsx-props-no-spreading': OFF,
   'react/jsx-sort-default-props': OFF,
+  'react/jsx-curly-brace-presence': OFF,
   
   'react/jsx-boolean-value': WARN,
   'react/jsx-closing-bracket-location': [WARN, 'after-props'],
   'react/jsx-closing-tag-location': WARN,
-  'react/jsx-curly-brace-presence': [WARN, 'never'],
   'react/jsx-curly-spacing': [WARN, { when: 'never' }],
   'react/jsx-equals-spacing': [WARN, 'never'],
   'react/jsx-fragments': [WARN, 'syntax'],

@@ -183,7 +183,6 @@ const ESLINT_RULES = {
   'max-statements': OFF,
   'max-statements-per-line': OFF,
   'multiline-comment-style': OFF,
-  'multiline-ternary': OFF,
   'newline-per-chained-call': OFF,
   'no-bitwise': OFF,
   'no-continue': OFF,
@@ -191,7 +190,6 @@ const ESLINT_RULES = {
   'no-lonely-if': OFF,
   'no-multi-assign': OFF,
   'no-negated-condition': OFF,
-  'no-nested-ternary': OFF,
   'no-plusplus': OFF,
   'no-restricted-syntax': OFF,
   'no-ternary': OFF,
@@ -199,7 +197,6 @@ const ESLINT_RULES = {
   'nonblock-statement-body-position': OFF,
   'one-var-declaration-per-line': OFF,
   'operator-assignment': OFF,
-  'operator-linebreak': OFF,
   'padding-line-between-statements': OFF,
   'prefer-object-spread': OFF,
   'semi-style': OFF,
@@ -236,13 +233,14 @@ const ESLINT_RULES = {
     'ImportDeclaration': 1,
     'flatTernaryExpressions': false,
     'ignoreComments': false,
-    'ignoredNodes': ['TemplateLiteral *']
+    'ignoredNodes': ['TemplateLiteral > *']
   }],
   'jsx-quotes': [ERROR, 'prefer-single'],
   'key-spacing': [ERROR, { 'beforeColon': false, 'afterColon': true }],
   'keyword-spacing': [ERROR, { 'before': true, 'after': true }],
   'lines-between-class-members': [ERROR, 'always', { 'exceptAfterSingleLine': true }],
   'max-len': [ERROR, { 'code': 100 }],
+  'multiline-ternary': [ERROR, 'always-multiline'],
   'new-cap': [ERROR, { 'newIsCap': true, 'capIsNew': false, 'properties': true }],
   'new-parens': ERROR,
   'no-array-constructor': ERROR,
@@ -256,6 +254,7 @@ const ESLINT_RULES = {
   }],
   'no-mixed-spaces-and-tabs': ERROR,
   'no-multiple-empty-lines': [ERROR, { 'max': 1, 'maxEOF': 0 }],
+  'no-nested-ternary': ERROR,
   'no-new-object': ERROR,
   'no-tabs': ERROR,
   'no-trailing-spaces': ERROR,
@@ -265,6 +264,7 @@ const ESLINT_RULES = {
   'object-curly-spacing': [ERROR, 'always'],
   'object-property-newline': [ERROR, { 'allowMultiplePropertiesPerLine': true }],
   'one-var': [ERROR, { 'initialized': 'never' }],
+  'operator-linebreak': [ERROR, 'before'],
   'padded-blocks': [ERROR, { 'blocks': 'never', 'switches': 'never', 'classes': 'never' }],
   'quote-props': [ERROR, 'as-needed'],
   'quotes': [ERROR, 'single', { 'avoidEscape': true, 'allowTemplateLiterals': false }],
@@ -360,10 +360,8 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/typedef': OFF,
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
-
+      
   '@typescript-eslint/no-explicit-any': WARN,
-  '@typescript-eslint/no-unused-vars': [WARN, { 'vars': 'all', 'args': 'after-used' }],
-  '@typescript-eslint/no-use-before-define': WARN,
 
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
   '@typescript-eslint/ban-ts-ignore': ERROR,
@@ -374,17 +372,18 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
   '@typescript-eslint/no-empty-function': ERROR,
-  '@typescript-eslint/no-empty-interface': ERROR,
+  '@typescript-eslint/no-empty-interface': ERROR,    
   '@typescript-eslint/no-inferrable-types': ERROR,
   '@typescript-eslint/no-misused-new': ERROR,
   '@typescript-eslint/no-namespace': ERROR,
   '@typescript-eslint/no-non-null-assertion': ERROR,
   '@typescript-eslint/no-this-alias': ERROR,
+  '@typescript-eslint/no-unused-vars': ERROR,
+  '@typescript-eslint/no-use-before-define': ERROR,
   '@typescript-eslint/no-var-requires': ERROR,
   '@typescript-eslint/prefer-namespace-keyword': ERROR,
   '@typescript-eslint/triple-slash-reference': ERROR,
   '@typescript-eslint/type-annotation-spacing': ERROR
-  
 }
 
 const IMPORT_RULES = {
