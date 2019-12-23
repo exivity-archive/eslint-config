@@ -284,7 +284,6 @@ const ESLINT_RULES = {
 
   // ECMAScript 6
   // https://eslint.org/docs/rules/#ecmascript-6
-  'arrow-body-style': OFF,
   'arrow-parens': OFF,
   'no-confusing-arrow': OFF,
   'no-duplicate-imports': OFF,
@@ -300,6 +299,7 @@ const ESLINT_RULES = {
   'require-yield': OFF,
   'sort-imports': OFF,
 
+  'arrow-body-style': [ERROR, 'as-needed'],
   'arrow-spacing': [ERROR, { 'before': true, 'after': true }],
   'constructor-super': ERROR,
   'generator-star-spacing': [ERROR, { 'before': true, 'after': true }],
