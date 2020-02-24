@@ -34,7 +34,7 @@ const JEST_RULES = {
   'jest/no-alias-methods': WARN,
   'jest/no-disabled-tests': WARN,
   
-  'jest/consistent-test-it': [ERROR, { 'fn': 'it', 'withinDescribe': 'test' }],
+  'jest/consistent-test-it': [ERROR, { 'fn': 'it', 'withinDescribe': 'it' }],
   'jest/no-focused-tests': ERROR,
   'jest/no-jasmine-globals': ERROR,
   'jest/no-test-return-statement': ERROR,
