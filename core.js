@@ -1,5 +1,5 @@
-const OFF = 0, 
-      WARN = 1, 
+const OFF = 0,
+      WARN = 1,
       ERROR = 2
 
 const ESLINT_RULES = {
@@ -43,7 +43,7 @@ const ESLINT_RULES = {
   'no-unsafe-negation': ERROR,
   'use-isnan': ERROR,
   'valid-typeof': [ERROR, { 'requireStringLiterals': true }],
-  
+
   // Best practices
   // https://eslint.org/docs/rules/#best-practices
   'array-callback-return': OFF,
@@ -171,7 +171,7 @@ const ESLINT_RULES = {
   'id-blacklist': OFF,
   'id-length': OFF,
   'id-match': OFF,
-  'implicit-arrow-linebreak': OFF,
+  'implicit-arrow-linebreak': ON,
   'line-comment-position': OFF,
   'linebreak-style': OFF,
   'lines-around-comment': OFF,
@@ -360,7 +360,7 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/typedef': OFF,
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
-      
+
   '@typescript-eslint/no-explicit-any': WARN,
 
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
@@ -372,7 +372,7 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
   '@typescript-eslint/no-empty-function': ERROR,
-  '@typescript-eslint/no-empty-interface': ERROR,    
+  '@typescript-eslint/no-empty-interface': ERROR,
   '@typescript-eslint/no-inferrable-types': ERROR,
   '@typescript-eslint/no-misused-new': ERROR,
   '@typescript-eslint/no-namespace': ERROR,
@@ -487,7 +487,7 @@ const TYPESCRIPT_OVERRIDE = {
     'no-var': ERROR,
     'prefer-const': ERROR,
     'prefer-rest-params': ERROR,
-    'prefer-spread': ERROR    
+    'prefer-spread': ERROR
   }
 }
 
