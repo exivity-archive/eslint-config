@@ -171,7 +171,7 @@ const ESLINT_RULES = {
   'id-blacklist': OFF,
   'id-length': OFF,
   'id-match': OFF,
-  'implicit-arrow-linebreak': ON,
+  'implicit-arrow-linebreak': ERROR,
   'line-comment-position': OFF,
   'linebreak-style': OFF,
   'lines-around-comment': OFF,
