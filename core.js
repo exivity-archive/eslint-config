@@ -322,13 +322,11 @@ const TYPESCRIPT_ESLINT_RULES = {
   // https://www.npmjs.com/package/@typescript-eslint/eslint-plugin#supported-rules
   '@typescript-eslint/array-type': OFF,
   '@typescript-eslint/await-thenable': OFF,
+  '@typescript-eslint/ban-ts-comment': OFF,
   '@typescript-eslint/brace-style': OFF,
-  '@typescript-eslint/camelcase': OFF,
   '@typescript-eslint/explicit-function-return-type': OFF,
   '@typescript-eslint/explicit-member-accessibility': OFF,
   '@typescript-eslint/func-call-spacing': OFF,
-  '@typescript-eslint/generic-type-naming': OFF,
-  '@typescript-eslint/member-naming': OFF,
   '@typescript-eslint/member-ordering': OFF,
   '@typescript-eslint/no-extra-parens': OFF,
   '@typescript-eslint/no-extraneous-class': OFF,
@@ -360,15 +358,39 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/typedef': OFF,
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
-
+  
   '@typescript-eslint/no-explicit-any': WARN,
-
+  
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
-  '@typescript-eslint/ban-ts-ignore': ERROR,
   '@typescript-eslint/ban-types': ERROR,
-  '@typescript-eslint/class-name-casing': ERROR,
-  '@typescript-eslint/indent': [ERROR, 2],
+  
+  '@typescript-eslint/naming-convention': [ERROR,
+    [
+      {
+        'selector': 'default',
+        'format': ['camelCase'],
+        'leadingUnderscore': 'allow',
+        'trailingUnderscore': 'allow',
+      },
+      {
+        'selector': 'variable',
+        'format': ['camelCase', 'UPPER_CASE'],
+        'leadingUnderscore': 'allow',
+        'trailingUnderscore': 'allow',
+      },
+    
+      {
+        'selector': 'typeLike',
+        'format': ['PascalCase'],
+      },
+    ]
+  ],
   '@typescript-eslint/interface-name-prefix': ERROR,
+  '@typescript-eslint/member-naming': OFF,
+  '@typescript-eslint/generic-type-naming': OFF,
+  '@typescript-eslint/camelcase': OFF,
+  
+  '@typescript-eslint/indent': [ERROR, 2],
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
   '@typescript-eslint/no-empty-function': ERROR,
