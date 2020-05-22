@@ -358,12 +358,11 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/typedef': OFF,
   '@typescript-eslint/unbound-method': OFF,
   '@typescript-eslint/unified-signatures': OFF,
-  
+
   '@typescript-eslint/no-explicit-any': WARN,
-  
+
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
   '@typescript-eslint/ban-types': ERROR,
-  
   '@typescript-eslint/naming-convention': [ERROR,
     [
       {
@@ -385,11 +384,6 @@ const TYPESCRIPT_ESLINT_RULES = {
       },
     ]
   ],
-  '@typescript-eslint/interface-name-prefix': ERROR,
-  '@typescript-eslint/member-naming': OFF,
-  '@typescript-eslint/generic-type-naming': OFF,
-  '@typescript-eslint/camelcase': OFF,
-  
   '@typescript-eslint/indent': [ERROR, 2],
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
