@@ -328,6 +328,7 @@ const TYPESCRIPT_ESLINT_RULES = {
   '@typescript-eslint/explicit-member-accessibility': OFF,
   '@typescript-eslint/func-call-spacing': OFF,
   '@typescript-eslint/member-ordering': OFF,
+  '@typescript-eslint/naming-convention': OFF,
   '@typescript-eslint/no-extra-parens': OFF,
   '@typescript-eslint/no-extraneous-class': OFF,
   '@typescript-eslint/no-floating-promises': OFF,
@@ -363,27 +364,6 @@ const TYPESCRIPT_ESLINT_RULES = {
 
   '@typescript-eslint/adjacent-overload-signatures': ERROR,
   '@typescript-eslint/ban-types': ERROR,
-  '@typescript-eslint/naming-convention': [ERROR,
-    [
-      {
-        'selector': 'default',
-        'format': ['camelCase'],
-        'leadingUnderscore': 'allow',
-        'trailingUnderscore': 'allow',
-      },
-      {
-        'selector': 'variable',
-        'format': ['camelCase', 'UPPER_CASE'],
-        'leadingUnderscore': 'allow',
-        'trailingUnderscore': 'allow',
-      },
-    
-      {
-        'selector': 'typeLike',
-        'format': ['PascalCase'],
-      },
-    ]
-  ],
   '@typescript-eslint/indent': [ERROR, 2],
   '@typescript-eslint/member-delimiter-style': [ERROR, { 'multiline': { 'delimiter': 'none'} }],
   '@typescript-eslint/no-array-constructor': ERROR,
