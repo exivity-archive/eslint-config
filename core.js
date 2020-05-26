@@ -322,13 +322,11 @@ const TYPESCRIPT_ESLINT_RULES = {
   // https://www.npmjs.com/package/@typescript-eslint/eslint-plugin#supported-rules
   '@typescript-eslint/array-type': OFF,
   '@typescript-eslint/await-thenable': OFF,
-  '@typescript-eslint/ban-ts-comment': OFF,
   '@typescript-eslint/brace-style': OFF,
   '@typescript-eslint/explicit-function-return-type': OFF,
   '@typescript-eslint/explicit-member-accessibility': OFF,
   '@typescript-eslint/func-call-spacing': OFF,
   '@typescript-eslint/member-ordering': OFF,
-  '@typescript-eslint/naming-convention': OFF,
   '@typescript-eslint/no-extra-parens': OFF,
   '@typescript-eslint/no-extraneous-class': OFF,
   '@typescript-eslint/no-floating-promises': OFF,
