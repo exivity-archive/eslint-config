@@ -37,7 +37,7 @@ const JEST_RULES = {
   'jest/consistent-test-it': [ERROR, { 'fn': 'it', 'withinDescribe': 'it' }],
   'jest/no-focused-tests': ERROR,
   'jest/no-jasmine-globals': ERROR,
-  'jest/no-test-return-statement': ERROR,
+  'jest/no-test-return-statement': OFF,
   'jest/prefer-to-be-null': ERROR,
   'jest/prefer-to-be-undefined': ERROR,
   'jest/prefer-to-contain': ERROR,
