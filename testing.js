@@ -1,5 +1,5 @@
-const OFF = 0, 
-      WARN = 1, 
+const OFF = 0,
+      WARN = 1,
       ERROR = 2
 
 const JEST_RULES = {
@@ -30,10 +30,10 @@ const JEST_RULES = {
   'jest/prefer-todo': OFF,
   'jest/require-top-level-describe': OFF,
   'jest/require-tothrow-message': OFF,
-  
+
   'jest/no-alias-methods': WARN,
   'jest/no-disabled-tests': WARN,
-  
+
   'jest/consistent-test-it': [ERROR, { 'fn': 'it', 'withinDescribe': 'it' }],
   'jest/no-focused-tests': ERROR,
   'jest/no-jasmine-globals': ERROR,
@@ -44,7 +44,7 @@ const JEST_RULES = {
   'jest/prefer-to-have-length': ERROR,
   'jest/valid-describe': ERROR,
   'jest/valid-expect': ERROR,
-  'jest/valid-expect-in-promise': ERROR,
+  'jest/valid-expect-in-promise': OFF,
 }
 
 const JEST_FORMATTING_RULES = {
@@ -67,12 +67,12 @@ module.exports = {
     'jest',
     'jest-formatting'
   ],
-  
+
   rules: {
     ...JEST_RULES,
     ...JEST_FORMATTING_RULES
   },
-  
+
   'settings': {
     'react': {
       'version': 'detect'
