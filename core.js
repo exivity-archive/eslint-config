@@ -299,7 +299,7 @@ const ESLINT_RULES = {
   'require-yield': OFF,
   'sort-imports': OFF,
 
-  'arrow-body-style': [OFF],
+  'arrow-body-style': OFF,
   'arrow-spacing': [ERROR, { 'before': true, 'after': true }],
   'constructor-super': ERROR,
   'generator-star-spacing': [ERROR, { 'before': true, 'after': true }],
